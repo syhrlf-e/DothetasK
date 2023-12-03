@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CATAT TUGAS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="animate__bounceIn"><span>D</span>oTheTas<span>k</span></h1>
+      <p class="des">JANGAN LUPA NGERJAIN TUGAS!!!</p>
+      <p class="copyright">&#169 Copyright Syhrl-e || 2023</p>
+      <div id="task-form">
+        <label for="course">Mata Kuliah</label>
+        <select id="course">
+          <option value="KALKULUS">KALKULUS</option>
+          <option value="ALGORITMA & PEMROGRAMAN">
+            ALGORITMA & PEMROGRAMAN
+          </option>
+          <option value="PENDIDIKAN AGAMA">PENDIDIKAN AGAMA</option>
+          <option value="PENDIDIKAN PANCASILA">PENDIDIKAN PANCASILA</option>
+          <option value="PENGANTAR TEKNOLOGI INFORMASI">
+            PENGANTAR TEKNOLOGI INFORMASI
+          </option>
+          <option value="FISIKA DASAR">FISIKA DASAR</option>
+          <option value="LOGIKA INFORMATIKA">LOGIKA INFORMATIKA</option>
+          <option value="BASIC ACADEMIC ENGLISH">BASIC ACADEMIC ENGLISH</option>
+        </select>
+        <label for="task" id="tugas">Nama Tugas</label>
+        <input type="text" id="task" placeholder="Nama Tugas & Pertemuan" />
+        <label for="date">Tanggal</label>
+        <input type="date" id="date" placeholder="Pilih Tanggal" />
+        <label for="time">Jam</label>
+        <input type="time" id="time" />
+        <button class="apply" onclick="addTask()">Tambah Tugas</button>
+      </div>
+      <ul id="task-list"></ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
